@@ -5,17 +5,17 @@
 package blend
 
 import (
-  "image/draw"
+	"image/draw"
 )
 
 // Work in progress.
 type Renderer interface {
-  draw.Image
-  Render(x, y int)
+	draw.Image
+	Render(x, y int)
 }
 
 // Work in progress.
 type ThreadedRenderer interface {
-  draw.Image
-  ThreadedRender(x, y chan int, done chan bool)
+	draw.Image
+	ThreadedRender(x, y chan int, done chan bool)
 }

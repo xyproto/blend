@@ -9,18 +9,18 @@
 // the function is applied to each pixel where the top layer (src)
 // overlaps the bottom layer (dst) of both given 'image' interfaces.
 //
-// This library provides many of the widely used blending functions 
+// This library provides many of the widely used blending functions
 // to be used either as 'mode' parameter to the Blend() primary
 // function, or to be used individually providing two 'color' interfaces.
-// You can implement your own blending modes and pass them into the 
+// You can implement your own blending modes and pass them into the
 // Blend() function.
 //
 // This is the list of the currently implemented blending modes:
 //
-// Add, Color, Color Burn, Color Dodge, Darken, Darker Color, Difference, 
-// Divide, Exclusion, Hard Light, Hard Mix, Hue, Lighten, Lighter Color, 
-// Linear Burn, Linear Dodge, Linear Light, Luminosity, Multiply, Overlay, 
-// Phoenix, Pin Light, Reflex, Saturation, Screen, Soft Light, Substract, 
+// Add, Color, Color Burn, Color Dodge, Darken, Darker Color, Difference,
+// Divide, Exclusion, Hard Light, Hard Mix, Hue, Lighten, Lighter Color,
+// Linear Burn, Linear Dodge, Linear Light, Luminosity, Multiply, Overlay,
+// Phoenix, Pin Light, Reflex, Saturation, Screen, Soft Light, Substract,
 // Vivid Light.
 //
 // Check github for more details:
@@ -35,7 +35,7 @@ import (
 )
 
 // Constants of max and mid values for uint16 for internal use.
-// This can be changed to make the algorithms use uint8 instead, 
+// This can be changed to make the algorithms use uint8 instead,
 // but they are kept this way to provide more acurate calculations
 // and to support all of the color modes in the 'image' package.
 const (
@@ -64,6 +64,7 @@ var (
 	Luminosity   BlendFunc
 	Multiply     BlendFunc
 	Overlay      BlendFunc
+	Mix          BlendFunc
 	Phoenix      BlendFunc
 	PinLight     BlendFunc
 	Reflex       BlendFunc
@@ -74,9 +75,9 @@ var (
 	VividLight   BlendFunc
 )
 
-// A blend function or blend mode receives a destination color and 
+// A blend function or blend mode receives a destination color and
 // a source color, then returns a transformation of them. Blend()
-// function receives a BlendFunc and applies it to every pixel in 
+// function receives a BlendFunc and applies it to every pixel in
 // the overlaping areas of two given images.
 type BlendFunc func(dst, src color.Color) color.Color
 
@@ -232,6 +233,19 @@ func overlay_per_ch(d, s float64) float64 {
 		return 2 * s * d / max
 	}
 	return max - 2*(max-s)*(max-d)/max
+}
+
+// MIX
+var (
+	SMul = 1.0
+	DMul = 1.0
+)
+
+func mix(dst, src color.Color) color.Color {
+	return blendPerChannel(dst, src, mix_per_ch)
+}
+func mix_per_ch(d, s float64) float64 {
+	return ((s * SMul) + (d * DMul)) / 2.0
 }
 
 // SOFT LIGHT
@@ -415,6 +429,7 @@ func init() {
 	LinearDodge = linear_dodge
 	LighterColor = lighter_color
 	Overlay = overlay
+	Mix = mix
 	SoftLight = soft_light
 	HardLight = hard_light
 	VividLight = vivid_light
