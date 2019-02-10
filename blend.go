@@ -65,6 +65,7 @@ var (
 	Multiply     BlendFunc
 	Overlay      BlendFunc
 	Mix          BlendFunc
+	OverlayMix   BlendFunc
 	Phoenix      BlendFunc
 	PinLight     BlendFunc
 	Reflex       BlendFunc
@@ -235,12 +236,25 @@ func overlay_per_ch(d, s float64) float64 {
 	return max - 2*(max-s)*(max-d)/max
 }
 
-// MIX
+// Used by MIX and OVERLAY MIX to multiply with the source and destination
+// color values
 var (
 	SMul = 1.0
 	DMul = 1.0
 )
 
+// OVERLAY MIX
+func overlay_mix(dst, src color.Color) color.Color {
+	return blendPerChannel(dst, src, overlay_mix_per_ch)
+}
+func overlay_mix_per_ch(d, s float64) float64 {
+	if d < mid {
+		return 2 * (((s * SMul) + (d * DMul)) / 2.0) / max
+	}
+	return max - 2*(max-((s*SMul)/2.0))*(max-((d*DMul)/2.0))/max
+}
+
+// MIX
 func mix(dst, src color.Color) color.Color {
 	return blendPerChannel(dst, src, mix_per_ch)
 }
@@ -430,6 +444,7 @@ func init() {
 	LighterColor = lighter_color
 	Overlay = overlay
 	Mix = mix
+	OverlayMix = overlay_mix
 	SoftLight = soft_light
 	HardLight = hard_light
 	VividLight = vivid_light
