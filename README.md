@@ -1,10 +1,10 @@
 # mix
 
-Go module for blending/mixing/crossfading between two image files.
+* Go module for blending/mixing/crossfading between two image files.
+* Started out as a fork of [phrozen/blend](https://github.com/phrozen/blend).
+* Includes a `blend` command line utility, for mixing two images 50%/50%.
 
-Fork of [phrozen/blend](https://github.com/phrozen/blend).
-
-Example use:
+## Example use of the Go package
 
     mix.Files("a.png", "b.png", "out.png", 0.5)
 
