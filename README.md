@@ -1,11 +1,16 @@
-# blend
+# mix
 
-Image processing library and rendering toolkit for Go.
+Go module for blending/mixing two image files.
 
 Fork of [phrozen/blend](https://github.com/phrozen/blend).
 
-Can be used for blending/mixing two image files.
-
 Example use:
 
-    MixFiles("a.png", "b.png", "out.png", 0.5)
+    mix.Files("a.png", "b.png", "out.png", 0.5)
+
+The last argument is a float that regulates the transition from one image to the other, where 0.0 is only "a.png", while 1.0 is only "b.png".
+
+## General info
+
+* License: MIT
+* Version: 0.0.0
