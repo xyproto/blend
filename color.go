@@ -1,4 +1,4 @@
-package mix
+package crossfade
 
 import (
 	"image/color"

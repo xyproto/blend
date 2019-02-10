@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/xyproto/mix"
+	"github.com/xyproto/crossfade"
 	"os"
 )
 
@@ -17,7 +17,7 @@ func main() {
 	out := os.Args[3]
 
 	fmt.Printf("Mixing %s and %s.\n", fn1, fn2)
-	err := mix.Files(fn1, fn2, out, 0.5)
+	err := crossfade.Files(fn1, fn2, out, 0.5)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "error: %s\n", err)
 		os.Exit(1)

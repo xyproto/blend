@@ -1,4 +1,4 @@
-// Package mix implements blending mode functions between images,
+// Package crossfade implements blending mode functions between images,
 // and some utility functions for image processing.
 //
 // The fundamental part of the library is the type BlendFunc,
@@ -18,7 +18,7 @@
 // Linear Burn, Linear Dodge, Linear Light, Luminosity, Multiply, Overlay,
 // Phoenix, Pin Light, Reflex, Saturation, Screen, Soft Light, Substract,
 // Vivid Light.
-package mix
+package crossfade
 
 import (
 	"image"

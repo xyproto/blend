@@ -1,4 +1,4 @@
-package mix
+package crossfade
 
 // Converts a float64 to an uint8 checking clamping the values
 // to be compatible with different architectures.

@@ -1,12 +1,12 @@
-# mix
+# crossfade
 
-* Go module for blending/mixing/crossfading between two image files.
+* Go module for crossfading between two image files.
 * Started out as a fork of [phrozen/blend](https://github.com/phrozen/blend).
 * Includes a `blend` command line utility, for mixing two images 50%/50%.
 
 ## Example use of the Go package
 
-    mix.Files("a.png", "b.png", "out.png", 0.5)
+    crossfade.Files("a.png", "b.png", "out.png", 0.5)
 
 The last argument is a float that regulates the transition from one image to the other, where 0.0 is only `"a.png"`, while 1.0 is only `"b.png"`.
 
@@ -37,4 +37,4 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 ## General info
 
 * License: MIT
-* Version: 1.0.0
+* Version: 2.0.0

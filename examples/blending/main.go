@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/xyproto/crossfade"
 	"github.com/xyproto/imagelib"
-	"github.com/xyproto/mix"
 )
 
 var modes = map[string]blend.BlendFunc{
