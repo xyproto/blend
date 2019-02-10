@@ -1,17 +1,9 @@
-/*
-	Example of blending modes using blend Go library.
-	https://github.com/phrozen/blend
-	by Guillermo Estrada
-*/
-
 package main
 
 import (
 	"fmt"
-	"github.com/phrozen/blend"
-	"image"
-	"image/jpeg"
-	"os"
+	"github.com/xyproto/imagelib"
+	"github.com/xyproto/mix"
 )
 
 var modes = map[string]blend.BlendFunc{
@@ -45,58 +37,22 @@ var modes = map[string]blend.BlendFunc{
 	"vivid_light":   blend.VividLight,
 }
 
-func LoadJPG(filename string) (image.Image, error) {
-	file, err := os.Open(filename)
-	if err != nil {
-		return nil, err
-	}
-
-	img, err := jpeg.Decode(file)
-	if err != nil {
-		return nil, err
-	}
-
-	return img, nil
-}
-
-func SaveJPG(filename string, img image.Image) error {
-	file, err := os.Create(filename + ".jpg")
-	if err != nil {
-		return err
-	}
-
-	if err := jpeg.Encode(file, img, &jpeg.Options{85}); err != nil {
-		return err
-	}
-
-	err = file.Close()
-	if err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func main() {
-	var err error
-	var img image.Image
-
-	dst, err := LoadJPG("destination.jpg")
+	dst, err := imagelib.Read("destination.jpg")
 	if err != nil {
 		panic(err)
 	}
 
-	src, err := LoadJPG("source.jpg")
+	src, err := imagelib.Read("source.jpg")
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Println("This program tests all the color blending modes in the library.")
-
 	for name, mode := range modes {
 		fmt.Println("Blending Mode: ", name)
-		img = blend.BlendNewImage(dst, src, mode)
-		err = SaveJPG("blend_"+name, img)
+		img := mix.BlendNewImage(dst, src, mode)
+		err = imagelib.Write("blend_"+name, img)
 		if err != nil {
 			panic(err)
 		}

@@ -1,8 +1,4 @@
-// Copyright (c) 2012 Guillermo Estrada. All rights reserved.
-// Use of this source code is governed by a MIT
-// license that can be found in the LICENSE file.
-
-// Package blend implements blending mode functions bewteen images,
+// Package mix implements blending mode functions between images,
 // and some utility functions for image processing.
 //
 // The fundamental part of the library is the type BlendFunc,
@@ -22,10 +18,7 @@
 // Linear Burn, Linear Dodge, Linear Light, Luminosity, Multiply, Overlay,
 // Phoenix, Pin Light, Reflex, Saturation, Screen, Soft Light, Substract,
 // Vivid Light.
-//
-// Check github for more details:
-// http://github.com/phrozen/blend
-package blend
+package mix
 
 import (
 	"image"

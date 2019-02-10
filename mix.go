@@ -1,10 +1,10 @@
-package blend
+package mix
 
 import (
 	"github.com/xyproto/imagelib"
 )
 
-func MixFiles(inFilename1, inFilename2, outFilename string, ratio float64) error {
+func Files(inFilename1, inFilename2, outFilename string, ratio float64) error {
 	img1, err := imagelib.Read(inFilename1)
 	if err != nil {
 		return err
@@ -26,7 +26,7 @@ func MixFiles(inFilename1, inFilename2, outFilename string, ratio float64) error
 	return nil
 }
 
-func OverlayMixFiles(inFilename1, inFilename2, outFilename string, ratio float64) error {
+func FilesWithOverlay(inFilename1, inFilename2, outFilename string, ratio float64) error {
 	img1, err := imagelib.Read(inFilename1)
 	if err != nil {
 		return err

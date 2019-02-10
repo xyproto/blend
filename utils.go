@@ -1,8 +1,4 @@
-// Copyright (c) 2012 Guillermo Estrada. All rights reserved.
-// Use of this source code is governed by a MIT
-// license that can be found in the LICENSE file.
-
-package blend
+package mix
 
 // Converts a float64 to an uint8 checking clamping the values
 // to be compatible with different architectures.
