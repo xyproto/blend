@@ -4,6 +4,8 @@
 * Started out as a fork of [phrozen/blend](https://github.com/phrozen/blend).
 * Includes a `blend` command line utility, for mixing two images 50%/50%.
 
+[github.com/anthonysimon/bild](https://github.com/anthonynsimon/bild) is a more popular choice than this package.
+
 ## Example use of the Go package
 
     crossfade.Files("a.png", "b.png", "out.png", 0.5)
