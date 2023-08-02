@@ -36,6 +36,37 @@ The last argument is a float that regulates the transition from one image to the
 
 The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulemur_mongoz_(male_-_face).jpg">lemur</a> | [mountain](https://nn.wikipedia.org/wiki/Fil:Lagginhorn_west_face.jpg)
 
+## Blendmode examples
+
+![blend add](img/blend_add.jpg)
+![blend color](img/blend_color.jpg)
+![blend color_burn](img/blend_color_burn.jpg)
+![blend color_dodge](img/blend_color_dodge.jpg)
+![blend darken](img/blend_darken.jpg)
+![blend darker_color](img/blend_darker_color.jpg)
+![blend difference](img/blend_difference.jpg)
+![blend divide](img/blend_divide.jpg)
+![blend exclusion](img/blend_exclusion.jpg)
+![blend hard_light](img/blend_hard_light.jpg)
+![blend hard_mix](img/blend_hard_mix.jpg)
+![blend hue](img/blend_hue.jpg)
+![blend lighten](img/blend_lighten.jpg)
+![blend lighter_color](img/blend_lighter_color.jpg)
+![blend linear_burn](img/blend_linear_burn.jpg)
+![blend linear_dodge](img/blend_linear_dodge.jpg)
+![blend linear_light](img/blend_linear_light.jpg)
+![blend luminosity](img/blend_luminosity.jpg)
+![blend multiply](img/blend_multiply.jpg)
+![blend overlay](img/blend_overlay.jpg)
+![blend phoenix](img/blend_phoenix.jpg)
+![blend pin_light](img/blend_pin_light.jpg)
+![blend reflex](img/blend_reflex.jpg)
+![blend saturation](img/blend_saturation.jpg)
+![blend screen](img/blend_screen.jpg)
+![blend soft_light](img/blend_soft_light.jpg)
+![blend substract](img/blend_substract.jpg)
+![blend vivid_light](img/blend_vivid_light.jpg)
+
 ## General info
 
 * License: BSD-3
