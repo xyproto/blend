@@ -43,33 +43,88 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 | ![source](cmd/blendmodes/source.jpg) | ![destination](cmd/blendmodes/destination.jpg) |
 
 ![blend add](img/blend_add.jpg)
+add
+
 ![blend color](img/blend_color.jpg)
+color
+
 ![blend color_burn](img/blend_color_burn.jpg)
+color_burn
+
 ![blend color_dodge](img/blend_color_dodge.jpg)
+color_dodge
+
 ![blend darken](img/blend_darken.jpg)
+darken
+
 ![blend darker_color](img/blend_darker_color.jpg)
+darker_color
+
 ![blend difference](img/blend_difference.jpg)
+difference
+
 ![blend divide](img/blend_divide.jpg)
+divide
+
 ![blend exclusion](img/blend_exclusion.jpg)
+exclusion
+
 ![blend hard_light](img/blend_hard_light.jpg)
+hard_light
+
 ![blend hard_mix](img/blend_hard_mix.jpg)
+hard_mix
+
 ![blend hue](img/blend_hue.jpg)
+hue
+
 ![blend lighten](img/blend_lighten.jpg)
+lighten
+
 ![blend lighter_color](img/blend_lighter_color.jpg)
+lighter_color
+
 ![blend linear_burn](img/blend_linear_burn.jpg)
+linear_burn
+
 ![blend linear_dodge](img/blend_linear_dodge.jpg)
+linear_dodge
+
 ![blend linear_light](img/blend_linear_light.jpg)
+linear_light
+
 ![blend luminosity](img/blend_luminosity.jpg)
+luminosity
+
 ![blend multiply](img/blend_multiply.jpg)
+multiply
+
 ![blend overlay](img/blend_overlay.jpg)
+overlay
+
 ![blend phoenix](img/blend_phoenix.jpg)
+phoenix
+
 ![blend pin_light](img/blend_pin_light.jpg)
+pin_light
+
 ![blend reflex](img/blend_reflex.jpg)
+reflex
+
 ![blend saturation](img/blend_saturation.jpg)
+saturation
+
 ![blend screen](img/blend_screen.jpg)
+screen
+
 ![blend soft_light](img/blend_soft_light.jpg)
+soft_light
+
 ![blend substract](img/blend_substract.jpg)
+substract
+
 ![blend vivid_light](img/blend_vivid_light.jpg)
+vivid_light
 
 ## General info
 
