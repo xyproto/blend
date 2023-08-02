@@ -43,90 +43,120 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 | ![source](cmd/blendmodes/source.jpg) | ![destination](cmd/blendmodes/destination.jpg) |
 
 ![blend add](img/blend_add.jpg)
-add
+
+Add
 
 ![blend color](img/blend_color.jpg)
-color
+
+Color
 
 ![blend color_burn](img/blend_color_burn.jpg)
-color_burn
+
+Color Burn
 
 ![blend color_dodge](img/blend_color_dodge.jpg)
-color_dodge
+
+Color Dodge
 
 ![blend darken](img/blend_darken.jpg)
-darken
+
+Darken
 
 ![blend darker_color](img/blend_darker_color.jpg)
-darker_color
+
+Darker Color
 
 ![blend difference](img/blend_difference.jpg)
-difference
+
+Difference
 
 ![blend divide](img/blend_divide.jpg)
-divide
+
+Divide
 
 ![blend exclusion](img/blend_exclusion.jpg)
-exclusion
+
+Exclusion
 
 ![blend hard_light](img/blend_hard_light.jpg)
-hard_light
+
+Hard Light
 
 ![blend hard_mix](img/blend_hard_mix.jpg)
-hard_mix
+
+Hard Mix
 
 ![blend hue](img/blend_hue.jpg)
-hue
+
+Hue
 
 ![blend lighten](img/blend_lighten.jpg)
-lighten
+
+Lighten
 
 ![blend lighter_color](img/blend_lighter_color.jpg)
-lighter_color
+
+Lighter Color
 
 ![blend linear_burn](img/blend_linear_burn.jpg)
-linear_burn
+
+Linear Burn
 
 ![blend linear_dodge](img/blend_linear_dodge.jpg)
-linear_dodge
+
+Linear Dodge
 
 ![blend linear_light](img/blend_linear_light.jpg)
-linear_light
+
+Linear Light
 
 ![blend luminosity](img/blend_luminosity.jpg)
-luminosity
+
+Luminosity
 
 ![blend multiply](img/blend_multiply.jpg)
-multiply
+
+Multiply
 
 ![blend overlay](img/blend_overlay.jpg)
-overlay
+
+Overlay
 
 ![blend phoenix](img/blend_phoenix.jpg)
-phoenix
+
+Phoenix
 
 ![blend pin_light](img/blend_pin_light.jpg)
-pin_light
+
+Pin Light
 
 ![blend reflex](img/blend_reflex.jpg)
-reflex
+
+Reflex
 
 ![blend saturation](img/blend_saturation.jpg)
-saturation
+
+Saturation
 
 ![blend screen](img/blend_screen.jpg)
-screen
+
+Screen
 
 ![blend soft_light](img/blend_soft_light.jpg)
-soft_light
+
+Soft Light
 
 ![blend substract](img/blend_substract.jpg)
-substract
+
+Substract
 
 ![blend vivid_light](img/blend_vivid_light.jpg)
-vivid_light
+
+Vivid Light
+
+Note that these images and blend modes are from the [phrozen/blend](github.com/phrozen/blend) repo that this repo was forked from.
 
 ## General info
 
-* License: BSD-3
-* Version: 1.1.1
+* License: MIT
+* Version: 1.1.2
