@@ -38,6 +38,10 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 
 ## Blendmode examples
 
+| A                                   | B                                             |
+|-------------------------------------|-----------------------------------------------|
+| ![source](cmd/blendmode/source.jpg) | ![destination](cmd/blendmode/destination.jpg) |
+
 ![blend add](img/blend_add.jpg)
 ![blend color](img/blend_color.jpg)
 ![blend color_burn](img/blend_color_burn.jpg)
