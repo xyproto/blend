@@ -38,5 +38,5 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 
 ## General info
 
-* License: MIT
-* Version: 2.0.0
+* License: BSD-3
+* Version: 1.1.0
