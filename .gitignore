@@ -1,1 +1,7 @@
+*.bak
+*.out
+*.swp
+*.tmp
 cmd/blend/blend
+cmd/blendmodes/blendmodes
+include.txt
