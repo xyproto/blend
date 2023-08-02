@@ -74,4 +74,4 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 ## General info
 
 * License: BSD-3
-* Version: 1.1.0
+* Version: 1.1.1
