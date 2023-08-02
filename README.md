@@ -38,9 +38,9 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 
 ## Blendmode examples
 
-| A                                   | B                                             |
-|-------------------------------------|-----------------------------------------------|
-| ![source](cmd/blendmode/source.jpg) | ![destination](cmd/blendmode/destination.jpg) |
+| A                                    | B                                              |
+|--------------------------------------|------------------------------------------------|
+| ![source](cmd/blendmodes/source.jpg) | ![destination](cmd/blendmodes/destination.jpg) |
 
 ![blend add](img/blend_add.jpg)
 ![blend color](img/blend_color.jpg)
