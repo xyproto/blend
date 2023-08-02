@@ -38,6 +38,8 @@ The images are from wikipedia: <a href="https://en.wikipedia.org/wiki/File:Eulem
 
 ## Blendmode examples
 
+Note that these images and blend modes are from the [phrozen/blend](github.com/phrozen/blend) repo that this repo was forked from.
+
 | A                                    | B                                              |
 |--------------------------------------|------------------------------------------------|
 | ![source](cmd/blendmodes/source.jpg) | ![destination](cmd/blendmodes/destination.jpg) |
@@ -153,8 +155,6 @@ Substract
 ![blend vivid_light](img/blend_vivid_light.jpg)
 
 Vivid Light
-
-Note that these images and blend modes are from the [phrozen/blend](github.com/phrozen/blend) repo that this repo was forked from.
 
 ## General info
 
